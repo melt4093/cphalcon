@@ -49,7 +49,7 @@ class InclusionIn extends Validator
 
 		let value = validation->getValue(field);
 
-		if this->isSetOption("allowEmpty") && empty value {
+		if this->isSetOption("allowEmpty") && this->getOption("allowEmpty")==true && empty value {
 			return true;
 		}
 
