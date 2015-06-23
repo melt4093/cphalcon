@@ -181,7 +181,7 @@ class QueryBuilder extends Adapter implements AdapterInterface
 			totalPages=0;
 
 		if row {
-			let rowcount = intval(row->ROWCOUNT),
+			let rowcount = intval(row->rowcount),
 				totalPages = intval(ceil(rowcount / limit));
 		}
 			
