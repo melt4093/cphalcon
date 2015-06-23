@@ -3,14 +3,13 @@
  * InclusionInTest.php
  * \Phalcon\Text\InclusionInTest
  *
- * Tests the Phalcon\Acl component
+ * Tests the Phalcon\Validation/Validator/InclusionIn component
  *
  * Phalcon Framework
  *
  * @copyright (c) 2011-2014 Phalcon Team
  * @link      http://www.phalconphp.com
- * @author    Andres Gutierrez <andres@phalconphp.com>
- * @author    Nikolaos Dimopoulos <nikos@phalconphp.com>
+ * @author    Danny Melton <melt4093@gmail.com>
  *
  * The contents of this file are subject to the New BSD License that is
  * bundled with this package in the file docs/LICENSE.txt
@@ -27,10 +26,10 @@ use \Phalcon\Tests\unit\Phalcon\_Helper\TestsBase as TBase;
 class InclusionInTest extends TBase
 {
     /**
-     * Tests the creation of an Acl Role (name)
+     * Tests that when allowEmpty is passed as false, that validation fails when
+     * an empty value is validated
      *
-     * @author Nikolaos Dimopoulos <nikos@phalconphp.com>
-     * @since  2014-10-03
+     * @author Danny Melton <melt4093@gmail.com>
      */
     public function testAllowEmpty()
     {
